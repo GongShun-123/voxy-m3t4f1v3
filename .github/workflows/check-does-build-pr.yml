@@ -1,6 +1,8 @@
-name: check-does-build-pr
+name: check-does-build
 
-on: [ pull_request ]
+on:
+  workflow_dispatch:          
+
 jobs:
   build:
     runs-on: ubuntu-latest
